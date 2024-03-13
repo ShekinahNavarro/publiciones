@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://i.pinimg.com/564x/0b/b2/ba/0bb2bac3d52131816c4d6a63d405af3c.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+  </head>
+
+  <body>
+    <div class="header-container col-md-3">
+      <div class="header-wrapper">
+          <div class="logoBox">
+              <img src="https://i.pinimg.com/736x/7a/ae/07/7aae0784146da32cb91778e44dd0747d.jpg" alt="logo">
+          </div>
+          <div class="searchBox">
+
+              <input type="search" placeholder="inicia tu busqueda...">
+              <i class="fas fa-search"></i>
+          </div>
+          <div class="iconBox1">
+              <i class="fa-solid fa-house"></i>
+              <i class="fa-solid fa-user-group"></i>
+              <i class="fa-solid fa-video"></i>
+              <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <div class="iconBox2">
+              <i class="fa-solid fa-circle-plus"></i>
+              <i class="fa-brands fa-facebook-messenger"></i>
+              <i class="fa-solid fa-bell"></i>
+              <label><img src="https://i.pinimg.com/736x/7a/ae/07/7aae0784146da32cb91778e44dd0747d.jpg" alt="user"></label>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="iconBox2">
+                  <!-- Otros iconos -->
+                  <a href="#" id="logoutButton">
+                      <i class="fa-solid fa-sign-out"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="home">
+    <div class="container">
+        <div class="home-weapper">
+
+            <!-- inicio de home star -->
+            <div class="home-left col-md-3">
+
+                <div class="profile">
+                    <img src="https://i.pinimg.com/736x/7a/ae/07/7aae0784146da32cb91778e44dd0747d.jpg" alt="user">
+                    <h3>zaori</h3>
+                </div>
+
+                <div class="pages ">
+                    <h4 class="mini-headign">Paginas ^^</h4>
+                    <label>
+                        <img src="https://static-00.iconduck.com/assets.00/message-icon-2043x2048-z7d1f8at.png" alt="messenger">
+                        <span> <a href="https://www.messenger.com/" target="_blank" >messenger</a></span>
+                    </label>
+                    <label>
+                        <img src="https://static-00.iconduck.com/assets.00/youtube-icon-2048x2048-ndntqyit.png" alt="yt">
+                        <span> <a href="https://www.youtube.com/" target="_blank" >YT</a></span>
+                    </label>
+                    <button class="see-more-btn">see more <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+
+                <div class="group">
+                    <h4 class="mini-headign">Grupos ^^</h4>
+                    <label>
+                        <img src="https://static.thenounproject.com/png/38114-200.png" alt="group01">
+                        <span>Electronica</span>
+                    </label>
+                    
+                    <label>
+                        <img src="https://cdn-icons-png.flaticon.com/512/4895/4895629.png" alt="group02">
+                        <span>kpop</span>
+                    </label>
+
+                    <label>
+                        <img src="https://static.thenounproject.com/png/2199155-200.png" alt="group03">
+                        <span>rock en español </span>
+                    </label>
+
+                    <label>
+                        <img src="https://thumbs.dreamstime.com/b/print-153312994.jpg" alt="group03">
+                        <span>bachata </span>
+                    </label>
+
+                    <label>
+                        <img src="https://lh3.googleusercontent.com/XYcSo6lFX6-IcqlMOo9zJbz4OIDfPMi92fNNfBsoJvfWvPUFOcS6EVV74_6UVFyze70" alt="group03">
+                        <span> openings </span>
+                    </label>
+
+                    <button class="see-more-btn">see more <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <div class="explore">
+                    <h4 class="mini-headign">Explorar</h4>
+
+                    <a href="#"><i class="fa-solid fa-user-group"></i>Grupos</a>
+                    <a href="#"><i class="fa-solid fa-star"></i>Favoritos</a>
+                    <a href="#"><i class="fa-solid fa-calendar-days"></i></i>Eventos</a>
+                    
+                    <div><label class="darkTheme"> <span></span></label>modo claro/oscuro</div>
+                    <button class="see-more-btn">see more <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+
+            </div>
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h4">Add Task</h1>
+
+              <form id="task-form">
+                <label for="title">Title:</label>
+                <input
+                  type="text" id="task-title"class="form-control mb-3"class="My First Title"placeholder="Task Title"autofocus
+                />
+
+                <label for="description">Description:</label>
+                <textarea id="task-description" rows="3" class="form-control mb-3" placeholder="Task Description"
+                ></textarea>
+
+                <button class="btn btn-primary" id="btn-task-save">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="" id="task-container"></div>
+      </div>
+    </div>
+
+    <div class="home-right col-md-3">
+      <div class="home-right-wrapper">
+
+          <div class="event-friend">
+              <div class="event">
+                  <h3 class="heading">proximos eventos <span>ver todo</span></h3>
+                  <img src="https://i.pinimg.com/564x/cb/59/cf/cb59cf78f2609505194a3ca4681a8e2a.jpg" alt="event-img">
+                  <div class="event-date">
+                      <h3>21 <b>julio</b></h3>
+                      <h4>recomendando canciones  <span> temas</span></h4>
+                  </div>
+                  <button><i class="fa-regular fa-star"></i> interesante</button>
+              </div>
+
+              <hr> 
+
+              <div class="friend">
+                  <h3 class="heading">Solicitud de amistad <span>Ver todo</span></h3>
+                  <ul>
+                      <li><img src="https://i.pinimg.com/736x/79/a0/a2/79a0a2aa60d8df98c730ff805700fe69.jpg" alt="user"></li>
+                      <li>
+                          <b>Said KT</b>
+                          <p>Te envio una solicitud de amistad</p>
+                          <button>Confirmar</button><button class="friend-remove">Eliminar</button>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+
+          <div class="create-page">
+              <ul>
+                  <li>
+                      <i class="fa-solid fa-circle-plus"></i>
+                      <h4>Crear página y grupos</h4>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </li>
+                  <li>
+                      <img src="https://i.pinimg.com/736x/7a/ae/07/7aae0784146da32cb91778e44dd0747d.jpg" alt="groups">
+                  </li>
+                  <li>
+                      <b>Grupos similares <span>20 miembros </span></b>
+                      <button>Unirse al grupo</button>
+                  </li>
+              </ul>
+          </div>
+
+
+          <div class="messenger">
+              <div class="messenger-search">
+                  <i class="fa-solid fa-user-group"></i>
+                  <h4>messenger</h4>
+                  <input type="search" placeholder="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <ul>
+                  <li>
+                      <img src="https://i.pinimg.com/564x/ea/5a/ad/ea5aad9a1beb7069236668254422bf9c.jpg" alt="user">
+                      <b>kary osume <span>online</span></b>
+                      <i class="fa-brands fa-facebook-messenger"></i>
+                  </li>
+
+                  <li>
+                      <img src="https://i.pinimg.com/564x/4a/d8/f1/4ad8f1f71ec86c2ccd1ed0d831ef9656.jpg" alt="user">
+                      <b>armando casas <span>online</span></b>
+                      <i class="fa-brands fa-facebook-messenger"></i>
+                  </li>
+
+                  <li>
+                      <img src="https://i.pinimg.com/564x/d3/e4/66/d3e466851b9d3d97f293cc4a682495b7.jpg" alt="user">
+                      <b>sasha jss <span>online</span></b>
+                      <i class="fa-brands fa-facebook-messenger"></i>
+                  </li>
+              </ul>
+          </div>
+      </div> 
+  </div>
+
+    <script type="module" src="CRUD.js"></script>
+    
+</body>
+</html>
